@@ -1,0 +1,58 @@
+$susy: (
+    columns: 12,
+    gutters: 1/6,
+    global-box-sizing: border-box,
+);
+
+.site-wrapper{
+    @include container(80%);
+}
+
+.container{
+    @include container(100%);
+}
+
+.site-logo{
+    img{
+        display: inline;
+    }
+	@include susy-breakpoint($medium) {
+		@include span(8);
+	}
+}
+
+.check-content{
+
+	@include susy-breakpoint($medium) {
+		@include span(4);
+		@include last;
+    }
+    
+}
+
+.steps-form{
+    @include span(6);
+}
+
+.reviews-part{
+    @include span(6);
+    @include last;
+    
+    .reviews{
+        @include span(9);
+        @include last;
+    }
+}
+
+footer {
+    .logo{
+        @include span(3);
+    }
+    .links{
+        @include span(5);
+    }
+    .certifications{
+        @include span(3);
+        @include last;
+    }
+}

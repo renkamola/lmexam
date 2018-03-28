@@ -1,0 +1,33 @@
+header{
+    color: $black;
+
+    .site-logo{
+        font-family: $fmedium;
+        color: $blue1;
+
+        img{
+            padding: 20px;
+            padding-left: 45px;
+            padding-right: 10px;
+        }
+        
+        span{
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 15px;
+            top: -33px;
+        }
+    }
+    .check-content{
+        font-family: $fbook;
+        font-size: 15px;
+        font-weight: 700;
+        ul{
+            li{
+                list-style-image: url('../img/check.png');
+                margin: 5px 0;
+            }
+        }
+    }
+}

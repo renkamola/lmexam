@@ -1,0 +1,34 @@
+// Color Pallete
+$blue1: #032a64;
+$blue2: #1373b1;
+$gray: #929ba4;
+$white: #ffffff;
+$orange: #d89108;
+$yellow: #fbd243;
+$black: #000000;
+
+//Font Faces
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('fonts/Gotham-Light.otf'); 
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('fonts/Gotham-Book.otf'); 
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('fonts/Gotham-Medium.otf'); 
+}
+
+$flight: 'Gotham-Light', sans-serif;
+$fbook: 'Gotham-Book', sans-serif;
+$fmedium: 'Gotham-Medium', sans-serif;
+
+
+// Responsive res
+$small: 480px;
+$medium: 640px;
+$large: 960px;

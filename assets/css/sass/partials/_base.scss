@@ -1,0 +1,178 @@
+body{
+    color: blue;
+    font-family: $fbook;
+}
+
+input{
+    outline: none;
+}
+
+.container{
+    color: $white;
+    background-color: $blue1;
+    // background: linear-gradient(-180deg, $blue1, $blue2);
+    background:  radial-gradient(closest-corner at 41% 67%, $blue2, $blue1 );
+    padding: 50px;
+
+    .intro-text, .steps-form{
+        
+        
+    }
+
+    .intro-text{
+
+        h1{
+            margin: 0px;
+            font-size: 41px;
+            font-family: $flight;
+            font-weight: 100;
+        }
+    
+        h2{
+            font-size: 29px;
+            margin: 0px;
+        }
+
+    }
+    
+    .steps-form{
+        margin-top: 35px;
+
+        .step1, .step2 {
+
+            .form-title{
+                font-family: $fmedium;
+                margin-bottom: 10px;
+            }
+
+            .form{
+                background-color: $white;
+                border-radius: 30px;
+                border: solid #fff 7px;
+                padding: 11px;
+                margin-bottom: 25px;
+                width: 450px;
+
+                input{
+                    // border: none;
+                    margin-left: 20px;
+                    font-size: 12px;
+                    font-weight: 900;
+                    border: none;
+                    width: 300px;
+                }
+                
+                span {
+                    font-family: $fmedium;
+                    background-color: $orange;
+                    border-radius: 20px;
+                    padding: 7px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    font-size: 12px;
+                    font-weight: 900;
+                    display: inline-block;    
+                    width: 7px;
+                    text-align: center;
+
+                }
+            }
+
+        }
+
+        .step2{
+            .form{
+                img{
+                    float: right;
+                    padding: 11px;
+                }
+            }
+        }
+
+        .step3{
+            text-align: center;
+            max-width: 490px;
+
+            a{
+                color: white;
+                text-decoration: none;
+                border-bottom: solid $gray 1px;
+            }
+        }
+    }
+
+    .reviews-part{
+
+        .review-title{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        article{
+
+            padding-bottom: 30px;
+            border-bottom: solid $blue2 1px;
+            margin-bottom: 20px;
+
+            &.last{
+                border-bottom: none;
+            }
+
+            .avatar{
+                width: 87px;
+                text-align: center;
+                font-size: 13px;
+                float: left;
+
+                img{
+                    border-radius: 50px;
+                    border: solid 1px $blue2;
+                    width: 65px;
+                }
+
+                .name{
+                    font-family: $fmedium;
+                    font-weight: 900;
+                }
+
+                .location{
+                    font-size: 11px;
+                }
+            }
+
+            .writeup{
+
+                .jobinfo{
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    font-family: $fmedium;
+                    font-weight: 900;
+
+                    span {
+                        font-size: medium;
+                        color: $orange;
+                        margin-left: 25px;
+                    }
+                }
+
+                .read{
+                    font-family: $fmedium;
+                    font-size: 12px;
+                    color: $yellow;
+                    float: right;
+                    margin-top: 10px;
+                }
+
+                .content{
+                    // @include ellipsis(1000px);
+                    // @include overflow-wrap;
+                    font-style: italic;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                
+            }
+
+        }
+    }
+}
